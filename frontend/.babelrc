@@ -1,7 +1,6 @@
-// In the frontend directory, create a .babelrc file with the following content:
 {
     "presets": ["@babel/preset-env", "@babel/preset-react"],
     "plugins": [
-      // Other plugins
+      "@babel/plugin-proposal-private-property-in-object"
     ]
   }
