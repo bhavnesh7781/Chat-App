@@ -30,7 +30,7 @@ const server = app.listen(PORT, () => {
 const __dirname1 = path.resolve(__dirname, '..');
 
 
-console.log(__dirname1); // Should print the path to the parent directory of `backend` and `frontend`
+// console.log(__dirname1); // Should print the path to the parent directory of `backend` and `frontend`
 // console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'production') {
     // Serve static files from the React frontend build directory

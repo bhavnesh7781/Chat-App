@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+  "start": "node index.js",
+  "dev": "nodemon index.js",
   "install:frontend": "cd ../frontend && npm install --legacy-peer-deps",
-    "build:frontend": "cd ../frontend && npm run build",
-    "install:backend": "npm install --legacy-peer-deps",
-    "build:backend": "npm run build", 
-    "build": "npm run install:frontend && npm run build:frontend && npm run install:backend && npm run build:backend"
-  },
+  "build:frontend": "cd ../frontend && npm run build",
+  "install:backend": "npm install --legacy-peer-deps",
+  "build:backend": "npm run build",
+  "build": "npm run install:frontend && npm run build:frontend && npm run install:backend && npm run build:backend"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

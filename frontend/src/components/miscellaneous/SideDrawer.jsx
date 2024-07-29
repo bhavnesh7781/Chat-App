@@ -26,8 +26,6 @@ import { useToast } from "@chakra-ui/toast";
 import ChatLoading from "../ChatLoading";
 import { Spinner } from "@chakra-ui/spinner";
 import ProfileModal from "./ProfileModal";
-import NotificationBadge from "react-notification-badge";
-import { Effect } from "react-notification-badge";
 import { getSender } from "../../config/ChatLogics";
 import UserListItem from "../userAvatar/UserListItem";
 import { ChatState } from "../../Context/ChatProvider";
@@ -57,7 +55,7 @@ function SideDrawer() {
   };
 
   const handleSearch = async () => {
-    
+
     if (!search) {
       toast({
         title: "Please Enter something in search",
@@ -112,7 +110,7 @@ function SideDrawer() {
       if (!chats.find((c) => c._id === data._id)) setChats([data, ...chats]);
       setSelectedChat(data);
       setLoadingChat(false);
-      
+
       onClose();
       setSearchResult();
     } catch (error) {
@@ -152,11 +150,9 @@ function SideDrawer() {
         <div>
           <Menu>
             <MenuButton p={1}>
-              <NotificationBadge
-                count={notification.length}
-                effect={Effect.SCALE}
-              />
-              <BellIcon fontSize="2xl" m={1} />
+              
+              <BellIcon fontSize="2xl" m={1}  />
+              <span style={{paddingLeft:0}}>{notification.length}</span>
             </MenuButton>
             <MenuList pl={2}>
               {!notification.length && "No New Messages"}
