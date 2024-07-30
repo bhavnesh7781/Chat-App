@@ -4,6 +4,8 @@
   "proxy": "http://127.0.0.1:5000",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.13.0",
@@ -23,8 +25,7 @@
     "react-scrollable-feed": "^2.0.2",
     "socket.io-client": "^4.7.5",
     "styled-components": "^6.1.12",
-    "web-vitals": "^2.1.4",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
