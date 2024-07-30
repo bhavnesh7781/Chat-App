@@ -88,11 +88,11 @@ io.on("connection", (socket) => {
 
 
         chat.users.forEach((user) => {
-            if (user._id == newMessageRecieved.sender._id) return;
+            // if (user._id == newMessageRecieved.sender._id) return;
 
             console.log(user);
 
-            socket.in(user._id).emit("message recieved", newMessageRecieved);
+            socket.to(user._id).emit("message recieved", newMessageRecieved);
         });
     });
 
